@@ -1,0 +1,4 @@
+services:
+#    spectral_mandrill.example:
+#        class: Spectral\SpectralMandrillBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
