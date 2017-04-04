@@ -18,8 +18,7 @@
     ],
     "require": {
         "symfony/http-foundation": ">=2.1",
-        "symfony/config": ">=2.1",
-        "mandrill/mandrill": "1.*"
+        "symfony/config": ">=2.1"
     },
     "autoload": {
         "psr-0": { "Spectral\\SpectralMandrillBundle": "" }
