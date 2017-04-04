@@ -1,5 +1,5 @@
 {
-    "name": "spectral/spectral-mandrill-bundle",
+    "name": "spectral/mandrill-bundle",
     "type": "symfony-bundle",
     "description": "Symfony SpectralMandrillBundle",
     "keywords": ["Mandrill", "transaction mail", "transactional", "messages", "email"],
@@ -13,7 +13,7 @@
         },
         {
             "name": "Github Community",
-            "homepage": "https://github.com/Hipaway-Travel/HipMandrillBundle/contributors"
+            "homepage": "https://github.com/spectral/SpectralMandrillBundle/contributors"
         }
     ],
     "require": {
