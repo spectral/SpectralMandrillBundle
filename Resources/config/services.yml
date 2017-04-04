@@ -1,4 +1,7 @@
+parameters:
+    spectral_mandrill.mandrill.class: Spectral\MandrillBundle\Mandrill
+
 services:
-#    spectral_mandrill.example:
-#        class: Spectral\SpectralMandrillBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    spectral_mandrill.mandrill:
+        class: "%spectral_mandrill.mandrill.class%"
+        arguments: ["@logger", "%spectral_mandrill.api_key%"]

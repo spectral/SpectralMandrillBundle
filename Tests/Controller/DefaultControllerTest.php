@@ -1,6 +1,6 @@
 <?php
 
-namespace Spectral\SpectralMandrillBundle\Tests\Controller;
+namespace Spectral\MandrillBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

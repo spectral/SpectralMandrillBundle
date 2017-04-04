@@ -1,6 +1,6 @@
 <?php
 
-namespace Spectral\SpectralMandrillBundle\DependencyInjection;
+namespace Spectral\MandrillBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -20,9 +20,10 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('spectral_mandrill');
 
-        // Here you should define the parameters that are allowed to
-        // configure your bundle. See the documentation linked above for
-        // more information on that topic.
+        $rootNode
+        ->children()
+            ->scalarNode('api_key')->isRequired()->cannotBeEmpty()->end()
+        ->end();
 
         return $treeBuilder;
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spectral\SpectralMandrillBundle\DependencyInjection;
+namespace Spectral\MandrillBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -21,6 +21,8 @@ class SpectralMandrillExtension extends Extension
     {
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
+        
+        $container->setParameter('spectral_mandrill.api_key', $config['api_key']);
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
